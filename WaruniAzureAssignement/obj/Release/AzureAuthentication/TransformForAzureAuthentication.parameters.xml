@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AD_ClientID" description="AD Client Application ID" defaultValue="59990372-8c5a-4a3d-bbd6-78a66632984e" tags="AD_ClientAPPID">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientId']/@value" />
+  </parameter>
+  <parameter name="AD_ClientPassword" description="AD Client Password" defaultValue="xG2kWbMq7DKdl0AYgrVlLeCHcGyvTsuWl0UPvpAFejU=" tags="AD_Password">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientSecret']/@value" />
+  </parameter>
+  <parameter name="AD_TenantId" description="AD Tenant Id" defaultValue="5629d226-380e-4f4c-8f8d-7b4f6abbf851" tags="AD_TenantId">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:TenantId']/@value" />
+  </parameter>
+  <parameter name="AD_Domain" description="AD Domain" defaultValue="wchexilesoft.onmicrosoft.com" tags="AD_Domain">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Domain']/@value" />
+  </parameter>
+  <parameter name="AD_PostLogoutRedirectUri" description="AD PostLogoutRedirectUri" defaultValue="https://localhost:44300/" tags="AD_PostLogoutRedirectUri">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:PostLogoutRedirectUri']/@value" />
+  </parameter>
+</parameters>

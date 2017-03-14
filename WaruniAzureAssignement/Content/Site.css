@@ -1,0 +1,85 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fffff0;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+.card-panel.flat, .card.flat, nav.flat {
+    box-shadow: 0 0 0 0, 0 0 0 0;
+}
+.card .card-content {
+    padding: 30px;
+    border-radius: 0 0 2px 2px;
+}
+.small-text {
+    font-size: 12px!important;
+    text-transform: none;
+    display: block;
+}
+ 
+.right {
+    float: right !important;
+}
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.grey-text.text-darken-2 {
+    color: #616161 !important;
+}
+  
+.flow-text {
+    font-size: 1.68rem;
+}
+.black-text {
+    color: #000000 !important;
+}
+.grey-text.text-lighten-2 {
+    color: #cfc0c0 !important;
+}
+
+.blog-topicLabels {
+    margin: 10px 0;
+    display: inline-block;
+    color: #505050;
+    background-color: #f4f4f4;
+    padding: 5px;
+    margin: 0 4px 10px 0;
+}
+
+.text-slate07 {
+    color: #969696;
+}
+
+ 

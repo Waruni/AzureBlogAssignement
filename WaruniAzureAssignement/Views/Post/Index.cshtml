@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WaruniAzureAssignement.Models.UserPost>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Blog Posts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create",null, new { @class = "btn btn-primary" })
+</p>
+
+@foreach (var item in Model)
+{
+    <div class="card flat" style="display: block;">
+        <div class="card-content">
+            <div class="row">
+                <div class="col l10 m6 s12">
+                    <h6 class="right small-text">
+                        <div class="grey-text text-lighten-2"> @item.CreatedOn</div>
+                    </h6>
+                    <p class="flow-text truncate grey-text text-darken-2">
+                        @Html.ActionLink(item.Heading, "Details", new {id = item.PostId, @class = "black-text"})
+                    </p>
+
+                    <p>@item.Content.Substring(0, Math.Min(item.Content.Length, 100)).</p><br>
+                    <h5><b>By</b> : @item.Author</h5>
+                    <div class="blog-topicLabels">
+                        @item.Tag
+                    </div>
+                    <ul class="list-inline right">
+                        <li>@Html.ActionLink("Read More...", "Details", new { id = item.PostId }, new { @class = "btn btn-success" }) </li>
+                        <li>@Html.ActionLink("Edit", "Edit", new { id = item.PostId }, new { @class = "btn btn-success" })</li>
+                        <li>@Html.ActionLink("Delete", "Delete", new { id = item.PostId }, new { @class = "btn btn-danger" })</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,39 @@
+﻿@model WaruniAzureAssignement.Models.Profile
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Profile Details</h2>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <td>First Name</td>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td>@Model.LastName</td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>@Model.Address</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <td>Telephone</td>
+        <td>@Model.Telephone</td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td><img src="@Url.Content(Model.ImageUrl)" alt="Image" height="200px" width="200px" /> </td>
+    </tr>
+</table>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {id = Model.ProfileId}) |
+    @Html.ActionLink("Go To Post", "Index", "Post")
+</p>

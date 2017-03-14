@@ -1,0 +1,53 @@
+﻿@model WaruniAzureAssignement.Models.UserPost
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card flat" style="display: block;">
+    <div class="card-content">
+        <div class="row">
+            <div class="col l10 m6 s12">
+                <p class="flow-text truncate grey-text text-darken-2">
+                    <h1>@Model.Heading</h1>
+                </p>
+                <p>
+                    <span class="text-slate07">Posted on : @Model.CreatedOn</span>
+                </p>
+                <h5><b>By</b> : @Model.Author</h5>
+
+                <p>@Model.Content</p><br>
+                
+                <div class="blog-topicLabels">
+                    @Model.Tag
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+        <div class="row" style="float:right;clear:both">
+            @Html.ActionLink("Add New Comment", "Comment", new { id = Model.PostId }, new { @class = "btn btn-success" })
+        </div>
+        @foreach (var comment in Model.Comments)
+        {
+            <div class="row" style="border-radius: 6px; padding: 10px; background-color: #f5f3f3; border: 1px solid #ece9e9; clear: both">
+                <div class="col-md-12">
+                    <h5 style="color: blue">@comment.UserName</h5>
+                    <p>@comment.UserComment</p>
+                </div>
+                @*<div class="col-md-9" style="border-left: 2px solid #ece9e9;">
+                    <p>@comment.UserComment</p>
+                </div>*@
+
+            </div>
+
+
+
+            <hr/>
+        }
+

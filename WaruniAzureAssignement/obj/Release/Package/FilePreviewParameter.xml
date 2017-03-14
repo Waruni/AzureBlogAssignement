@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WaruniAzureAssignement" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:waruniazureassignementdbserver.database.windows.net,1433;Initial Catalog=WaruniAzureAssignement_db;User Id=AzureAdmin@waruniazureassignementdbserver;Password=AdminAzure123#" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AD_APPIDUri" description="" value="https://wchexilesoft.onmicrosoft.com/WebApp-waruniazureassignement.azurewebsites.net" tags="" />
+  <parameter name="AD_ClientID" description="" value="afc9a9f8-8754-4d0f-9b05-eb268491ce7f" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientId']/@value" />
+  </parameter>
+  <parameter name="AD_MetadataUrl" description="" value="https://login.windows.net/wchexilesoft.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml" tags="" />
+  <parameter name="AD_ClientPassword" description="" value="0xsD+2nL8xpEPlmi93Cgb4wScosngyk44G8WX4Uh9Rk=" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientSecret']/@value" />
+  </parameter>
+  <parameter name="AD_RealmAppSetting" description="" value="https://wchexilesoft.onmicrosoft.com/WebApp-waruniazureassignement.azurewebsites.net" tags="" />
+  <parameter name="AD_AudienceUriAppSetting" description="" value="https://wchexilesoft.onmicrosoft.com/WebApp-waruniazureassignement.azurewebsites.net" tags="" />
+  <parameter name="AD_TenantId" description="" value="5629d226-380e-4f4c-8f8d-7b4f6abbf851" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:TenantId']/@value" />
+  </parameter>
+  <parameter name="AD_Domain" description="" value="wchexilesoft.onmicrosoft.com" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Domain']/@value" />
+  </parameter>
+  <parameter name="AD_PostLogoutRedirectUri" description="" value="https://waruniazureassignement.azurewebsites.net/" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Azure\ traning\\AzureAssignment\\WaruniAzureAssignement\\WaruniAzureAssignement\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:PostLogoutRedirectUri']/@value" />
+  </parameter>
+</parameters>
